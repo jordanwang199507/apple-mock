@@ -1,6 +1,6 @@
 "use client";
 import * as THREE from "three";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useTexture, useGLTF } from "@react-three/drei";
 
 function Iphone(props) {
@@ -8,18 +8,18 @@ function Iphone(props) {
   const texture = useTexture(props.item.img);
 
   useEffect(() => {
-    Object.entries(materials).map((material) => {
-      // these are the material names that can't be changed color
+    Object.entries(materials).forEach(([materialName, materialValue]) => {
+      // these are the material names that can't change color
       if (
-        material[0] !== "zFdeDaGNRwzccye" &&
-        material[0] !== "ujsvqBWRMnqdwPx" &&
-        material[0] !== "hUlRcbieVuIiOXG" &&
-        material[0] !== "jlzuBkUzuJqgiAK" &&
-        material[0] !== "xNrofRCqOXXHVZt"
+        materialName !== "zFdeDaGNRwzccye" &&
+        materialName !== "ujsvqBWRMnqdwPx" &&
+        materialName !== "hUlRcbieVuIiOXG" &&
+        materialName !== "jlzuBkUzuJqgiAK" &&
+        materialName !== "xNrofRCqOXXHVZt"
       ) {
-        material[1].color = new THREE.Color(props.item.color[0]);
+        materialValue.color = new THREE.Color(props.item.color[0]);
       }
-      material[1].needsUpdate = true;
+      materialValue.needsUpdate = true;
     });
   }, [materials, props.item]);
 

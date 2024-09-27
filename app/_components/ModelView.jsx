@@ -1,6 +1,5 @@
 "use client";
-import React, { Suspense, useRef, useEffect } from "react";
-import dynamic from "next/dynamic";
+import React, { Suspense } from "react";
 import { Lights, Iphone, Loader } from ".";
 import * as THREE from "three";
 import { View, PerspectiveCamera, OrbitControls } from "@react-three/drei";

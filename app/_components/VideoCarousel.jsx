@@ -50,12 +50,11 @@ const VideoCarousel = () => {
 
   useEffect(() => {
     const currentVideo = videoRef.current[videoId];
-    const videoDiv = videoDivRef.current[videoId];
     const span = videoSpanRef.current;
     let currentProgress = 0;
 
     if (span[videoId]) {
-      let anim = gsap.to(span[videoId], {
+      const anim = gsap.to(span[videoId], {
         onUpdate: () => {
           const progress = Math.ceil(anim.progress() * 100);
 
@@ -91,7 +90,7 @@ const VideoCarousel = () => {
 
       const animUpdate = () => {
         anim.progress(
-          currentVideo.currentTime / hightlightsSlides[videoId].videoDuration,
+          currentVideo.currentTime / hightlightsSlides[videoId].videoDuration
         );
       };
 
