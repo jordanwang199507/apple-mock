@@ -1,37 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍏 iPhoneMock
 
-## Getting Started
+### iPhone 15 landing page build with Next, THREE, and GSAP.
 
-First, run the development server:
+[![made-with-Next](https://img.shields.io/badge/Made%20with-Next.js%20-success)](https://nextjs.org/)
+[![made-with-THREE](https://img.shields.io/badge/Made%20with-THREE%20-blue)](https://wordpress.com/)
+[![made-with-GSAP](https://img.shields.io/badge/Made%20with-GSAP%20-yellow)](https://woocommerce.com/)
+[![deployed-on-Vercel](https://img.shields.io/badge/Deployed%20on-Vercel%20-orange)](https://vercel.com/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[🍏 Live Version](https://apple-mock.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📑 Table of Content
+- [🍏 iPhoneMock](#-iphonemock)
+  - [📑 Table of Content](#-table-of-content)
+  - [🌟 Features](#-features)
+  - [🧱 Dependencies](#-dependencies)
+  - [🚀 Getting Started](#-getting-started)
+  - [📘 Acknowledgements](#-acknowledgements)
+  - [🔨 Created By](#-created-by)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📷 Thumbnails
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+https://github.com/user-attachments/assets/b721d8ff-1391-40d9-959a-19cd91420e46
 
-## Learn More
+https://github.com/user-attachments/assets/a7454dfb-6984-4ef6-b98a-746543678695
 
-To learn more about Next.js, take a look at the following resources:
+https://github.com/user-attachments/assets/c560f5c8-f7e0-4c51-bc58-a49d962101b3
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+</div>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🌟 Features
+- **THREE**: animate 3D graphics
+- **Next.js Framework**: Provides server-side rendering and static site generation.
+- **GSAP**: Smooth Animation
+- **Lenis**: Smooth Scroll
 
-## Deploy on Vercel
+## 🧱 Dependencies
+- `gsap`: ^3.12.5
+- `@gsap/react`: ^2.1.1
+- `@react-three/drei`: ^9.114.0
+- `@react-three/fiber`: ^8.17.8
+- `tailwindcss`: ^3.4.1
+- `three`: ^0.168.0
+- `@studio-freight/react-lenis`: ^0.0.47
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Getting Started
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# apple-mock
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+2. Install all the depndencies <br>
+   `npm install`
+3. Run the server
+   ```sh
+   npm run dev
+   ```
+
+## 📘 Acknowledgements
+- Next.js
+- GSAP
+- THREE
+- Lenis
+
+## 🔨 Created By
+- Jordan Wang @jordanwang199507
